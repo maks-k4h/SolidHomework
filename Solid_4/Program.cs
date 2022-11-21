@@ -8,6 +8,8 @@
 Опишіть класи книжки (розмір та колір не потрібні, але потрібна ціна та знижки) та верхній одяг (колір, розмір, ціна знижка),
 які реалізують притаманні їм інтерфейси.*/
 
+// порушено ISP
+
 interface IItem
 {
     void ApplyDiscount(String discount);
@@ -17,13 +19,4 @@ interface IItem
     void SetSize(byte size);
 
     void SetPrice(double price);
-}
-
-class Program
-{
-    static void Main(string[] args)
-    {
-       
-        Console.ReadKey();
-    }
 }

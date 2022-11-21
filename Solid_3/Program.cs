@@ -1,5 +1,12 @@
 ﻿using System;
 
+// Порушено LSP — клас Sqruare не може бути коректно використаним там,
+//                де використовується його предок — Rectange;
+//                порушено інваріантність, яку поширює LSP.
+// Можливі способи вирішення:
+//      — Переписати методи, які некоректно використовують нащадків (-)
+//      — Змінити ієрархію  (+)
+
 class Rectangle
 {
     public virtual int Width { get; set; }
@@ -32,6 +39,7 @@ class Square : Rectangle
         }
     }
 
+    /*
     class Program
     {
         static void Main(string[] args)
@@ -45,4 +53,6 @@ class Square : Rectangle
             Console.ReadKey();
         }
     }
+    */
+    
 }
