@@ -5,8 +5,7 @@ namespace Solid2S
     // SRP — надсилач повідомлень більше не виконує логування
     // OCP — LoggingEmailSender розширює функціонал EmailSender;
     //       водночас реалізація EmailSender не змінюється
-    // LSP — нащадки EmailSender можуть коректно використовуватися там, 
-    //       де повинен використовуватися EmailSender
+    // LSP --
     // ISP --
     // DIP --  
 

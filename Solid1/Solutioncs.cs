@@ -11,8 +11,8 @@ namespace Solid1S
     // OCP — перше, а також створив клас StandardOrder, який втілює фінансову логіку
     // LSP --
     // ISP --
-    // DIP — Item перетворив на інтерфейс
-    interface IItem
+    // DIP --
+    class IItem
     {
         
     }
@@ -47,7 +47,6 @@ namespace Solid1S
     class OrderPrinter
     {
         public void PrintOrder(Order o) {/*...*/}
-
     }
 
     class OrderDisplay
